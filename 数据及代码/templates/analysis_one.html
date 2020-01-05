@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body bgcolor="33a3dc">
+<style type="text/css">
+    #rig{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    </style>
+    <a href="/" id="rig">
+                <button>返回首页</button>
+    </a>
+<form method="POST" action="/skip">
+    <select name="option">
+        {% for L in list %}
+            <option value="{{ L }}">{{ L }}</option>
+        {% endfor %}
+    </select>
+<p><input value='skip' type='SUBMIT'></p>
+</form>
+<HR SIZE=5>
+    <div id="5b9253c6460449e085672473f5c91fe8" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_5b9253c6460449e085672473f5c91fe8 = echarts.init(
+            document.getElementById('5b9253c6460449e085672473f5c91fe8'), 'white', {renderer: 'canvas'});
+        var option_5b9253c6460449e085672473f5c91fe8 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "\u533b\u9662\u75c5\u5e8a\u5de5\u4f5c\u65e5(\u65e5)",
+            "data": [
+                "316.45",
+                "322.93",
+                "329.7",
+                "324.82",
+                "321.38",
+                "311.6",
+                "311.32",
+                "310.1",
+                "307.4"
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "bar",
+            "name": "\u533b\u9662\u5e73\u5747\u4f4f\u9662\u65e5(\u65e5)",
+            "data": [
+                "10.49",
+                "10.3",
+                "10.01",
+                "9.84",
+                "9.65",
+                "9.6",
+                "9.41",
+                "9.27",
+                "9.3"
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "line",
+            "name": "\u533b\u9662\u75c5\u5e8a\u4f7f\u7528\u7387(%)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2010\u5e74",
+                    "86.7"
+                ],
+                [
+                    "2011\u5e74",
+                    "88.5"
+                ],
+                [
+                    "2012\u5e74",
+                    "90.1"
+                ],
+                [
+                    "2013\u5e74",
+                    "89.0"
+                ],
+                [
+                    "2014\u5e74",
+                    "88.0"
+                ],
+                [
+                    "2015\u5e74",
+                    "85.4"
+                ],
+                [
+                    "2016\u5e74",
+                    "85.3"
+                ],
+                [
+                    "2017\u5e74",
+                    "85.0"
+                ],
+                [
+                    "2018\u5e74",
+                    "84.2"
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u533b\u9662\u75c5\u5e8a\u5de5\u4f5c\u65e5(\u65e5)",
+                "\u533b\u9662\u5e73\u5747\u4f4f\u9662\u65e5(\u65e5)",
+                "\u533b\u9662\u75c5\u5e8a\u4f7f\u7528\u7387(%)"
+            ],
+            "selected": {
+                "\u533b\u9662\u75c5\u5e8a\u5de5\u4f5c\u65e5(\u65e5)": true,
+                "\u533b\u9662\u5e73\u5747\u4f4f\u9662\u65e5(\u65e5)": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2010\u5e74",
+                "2011\u5e74",
+                "2012\u5e74",
+                "2013\u5e74",
+                "2014\u5e74",
+                "2015\u5e74",
+                "2016\u5e74",
+                "2017\u5e74",
+                "2018\u5e74"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u75c5\u5e8a\u4f7f\u7528\u60c5\u51b5"
+        }
+    ]
+};
+        chart_5b9253c6460449e085672473f5c91fe8.setOption(option_5b9253c6460449e085672473f5c91fe8);
+    </script>
+<p>总结：</p>
+<p>此图为组合图表，结合了2010年-2018年，医院病床工作日(日)，医院病床使用率（%），医院平均住院日(日）三组数据，
+    给大家一个数据交互可视化的直观读取。 有图可知，医院病床工作日(日)，医院病床使用率（%），医院平均住院日(日
+    ）这三组数据在2010年-2018年里都没有太大的显著变化，抛开其他因素，也就是说单纯的床位数大幅度增长并没有对医
+    院病床的工作日、使用率（%）有很显著的改变，而平局住院日的上升趋势可续是两者改善的阻挠因素之一。 从2009年我
+    国医改工作全面启动，从此医院运作管理和医疗资源优化的关注度在全行业内不断提高，与国务院在《全国医疗卫生服务体
+    系规划纲要（2015一2020年）》中指出要明确路线、加大力度的情况下，虽床位数等得到了有效的增长，但病床的使用情
+    况并没有得到一个很好得改善。 要解决这一问题，但凭借医疗基础设施的发展是不行的，还需结合社会性人们的病情发展
+    结构，医疗意识的水平程度与就医条件、流程的改进相匹配。 希望这个项目让人们得知，除了坚持发展医疗基础设施外，
+    我们还得以国情为基础，发现更多隐藏着的阻挠医疗卫生改善工作的相关因素，并加以研究、解决，让中国的医疗卫生条件
+    得到阶段性的改善。</p>
+{{ the_res|safe }}
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<form method="POST" action="/skip">
+    <select name="option">
+        {% for L in list %}
+            <option value="{{ L }}">{{ L }}</option>
+        {% endfor %}
+    </select>
+<p><input value='skip' type='SUBMIT'></p>
+</form>
+<HR SIZE=5>
+<body bgcolor="33a3dc">
+<style type="text/css">
+    #rig{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    </style>
+    <a href="/" id="rig">
+                <button>返回首页</button>
+    </a>
+    <div id="5160003c0fcf449ba19a1617e596561f" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_5160003c0fcf449ba19a1617e596561f = echarts.init(
+            document.getElementById('5160003c0fcf449ba19a1617e596561f'), 'white', {renderer: 'canvas'});
+        var option_5160003c0fcf449ba19a1617e596561f = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "2010\u5e74",
+                    "value": "86.7"
+                },
+                {
+                    "name": "2011\u5e74",
+                    "value": "88.5"
+                },
+                {
+                    "name": "2012\u5e74",
+                    "value": "90.1"
+                },
+                {
+                    "name": "2013\u5e74",
+                    "value": "89.0"
+                },
+                {
+                    "name": "2014\u5e74",
+                    "value": "88.0"
+                },
+                {
+                    "name": "2015\u5e74",
+                    "value": "85.4"
+                },
+                {
+                    "name": "2016\u5e74",
+                    "value": "85.3"
+                },
+                {
+                    "name": "2017\u5e74",
+                    "value": "85.0"
+                },
+                {
+                    "name": "2018\u5e74",
+                    "value": "84.2"
+                }
+            ],
+            "radius": [
+                "30%",
+                "75%"
+            ],
+            "center": [
+                "25%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "2010\u5e74",
+                    "value": "10.49"
+                },
+                {
+                    "name": "2011\u5e74",
+                    "value": "10.3"
+                },
+                {
+                    "name": "2012\u5e74",
+                    "value": "10.01"
+                },
+                {
+                    "name": "2013\u5e74",
+                    "value": "9.84"
+                },
+                {
+                    "name": "2014\u5e74",
+                    "value": "9.65"
+                },
+                {
+                    "name": "2015\u5e74",
+                    "value": "9.6"
+                },
+                {
+                    "name": "2016\u5e74",
+                    "value": "9.41"
+                },
+                {
+                    "name": "2017\u5e74",
+                    "value": "9.27"
+                },
+                {
+                    "name": "2018\u5e74",
+                    "value": "9.3"
+                }
+            ],
+            "radius": [
+                "30%",
+                "75%"
+            ],
+            "center": [
+                "75%",
+                "50%"
+            ],
+            "roseType": "area",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "2010\u5e74",
+                "2011\u5e74",
+                "2012\u5e74",
+                "2013\u5e74",
+                "2014\u5e74",
+                "2015\u5e74",
+                "2016\u5e74",
+                "2017\u5e74",
+                "2018\u5e74"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u75c5\u5e8a\u60c5\u51b5"
+        }
+    ]
+};
+        chart_5160003c0fcf449ba19a1617e596561f.setOption(option_5160003c0fcf449ba19a1617e596561f);
+    </script>
+<p>总结：</p>
+<p>左边玫瑰图为医院病床使用率（%），右边玫瑰图为医院平均住院日(日）
+玫瑰图为饼图的另一形式，使用的原因是医院病床使用率（%）与医院平均住院日(日）在2010年-2018年几乎没有任何变化，所以玫瑰图玫瑰没有绽放，更像个普通饼图。
+医院病床使用率（%）在这几年里一直维持在84.2%-90.1%，医院平均住院日(日）在这几年
+    里一直维持在9.3天-10.49天，变化幅度不大，但总体是上升的。 在各卫生机构床位数
+    逐渐增长的情况下，医院平均住院日的提升带表着病床占用天数的提升，使得病床调整管
+    理变得灵活性逐渐减弱，而医院病床使用率(%)居高不下代表着病床实情并由得到很好的调
+    整，证明印证了存有问题。在这有人或许对病床使用率越高越好存有错误认识，再下面给大家
+    进行简单的解释： 病床使用率是反映一定时期内使用的病床与开放的病床之比, 是反映病床利
+    用的指标。 它是用相对数表示的。一般认为该指标以 85%～ 93%为宜。 使用率过低, 说明病床
+    有空 闲, 尚有潜力未能充分发挥;太高说明病床负担过重, 不能有足够的时间用于对病床的消毒
+    处置, 容易增加医院感染, 临时加床会影响病房管理, 可能给医疗质量带来不利影响, 应尽量避免
+    。所以, 认为使用率越高越好的观点是错误的。 </p>
+{{ the_res|safe }}
+</body>
+</html>
